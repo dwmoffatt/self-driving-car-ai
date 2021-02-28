@@ -4,6 +4,7 @@
 import numpy as np
 
 # from random import random, randint
+import matplotlib
 import matplotlib.pyplot as plt
 
 # import time
@@ -23,6 +24,7 @@ from ai import Dqn
 
 # Adding this line if we don't want the right click to put a red point
 Config.set("input", "mouse", "mouse,multitouch_on_demand")
+matplotlib.use("TkAgg")
 
 # Introducing last_x and last_y, used to keep the last point in memory when we draw the sand on the map
 last_x = 0
